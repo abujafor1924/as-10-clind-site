@@ -3,10 +3,10 @@ import React from "react";
 const About = () => {
   return (
     <div>
-      <div>
-        <h1>
+      <div className="p-4">
+        <h1 className="text-2xl font-semibold">
           Tell us the differences between uncontrolled and controlled
-          components.
+          components?
         </h1>
         <p>
           These components rely on props passed down from the parent component
@@ -14,8 +14,10 @@ const About = () => {
           components that manage their own state internally.
         </p>
       </div>
-      <div>
-        <h1>How to validate React props using PropTypes</h1>
+      <div className="p-4">
+        <h1 className="text-2xl font-semibold">
+          How to validate React props using PropTypes?
+        </h1>
         <p>
           PropTypes is a type-checking library for React that allows you to
           ensure the correctness of your component's props. By specifying the
@@ -25,8 +27,10 @@ const About = () => {
           Better Worse Same
         </p>
       </div>
-      <div>
-        <h1>Tell us the difference between nodejs and express js.</h1>
+      <div className="p-4">
+        <h1 className="text-2xl font-semibold">
+          Tell us the difference between nodejs and express js?
+        </h1>
         <p>
           Node.js is a runtime environment that allows JavaScript code to run
           outside the browser, while Express.js is a web application framework
@@ -34,8 +38,10 @@ const About = () => {
           the development of web applications.
         </p>
       </div>
-      <div>
-        <h1>What is a custom hook, and why will you create a custom hook?</h1>
+      <div className="p-4">
+        <h1 className="text-2xl font-semibold">
+          What is a custom hook, and why will you create a custom hook?
+        </h1>
         <p>
           A custom hook is a reusable function in React that allows you to
           extract logic and stateful behavior from components. Custom hooks are
