@@ -8,9 +8,9 @@ import ChefPerson from "./ChefPerson";
 const HeaderPage = () => {
   return (
     <div>
-      <div className=" md:h-96   ">
+      <div className=" md:h-96 b  ">
         <div>
-          <h1 className="text-center text-white-50 text-7xl font-bold  pt-24 ">
+          <h1 className="text-center text-zinc-400 text-7xl font-bold  pt-24  ">
             Our Passion <br></br> For Delicious <br></br> Food
           </h1>
         </div>
