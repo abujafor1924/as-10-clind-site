@@ -111,7 +111,7 @@ const Header = () => {
               <Link to={"/register"}>Register</Link>
             </li> */}
           </ul>
-          {user && <h1>User Profile : {user?.displayName}</h1>}
+          {user && <h1>User Profile : {user?.email}</h1>}
         </div>
         <div className="navbar-end">
           <span>

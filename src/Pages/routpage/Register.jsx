@@ -130,7 +130,6 @@ const Register = () => {
                 placeholder="Confirm password"
                 name="confirm"
                 className="input input-bordered"
-                required
               />
             </div>
             <p className="text-green-500  mt-2">{success}</p>
