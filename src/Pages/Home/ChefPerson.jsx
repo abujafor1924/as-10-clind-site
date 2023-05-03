@@ -11,7 +11,7 @@ const ChefPerson = () => {
       .then((data) => setChef(data));
   }, []);
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid md:grid-cols-3 gap-4 ">
       {chef.map((data) => (
         <Categories key={data.id} data={data}></Categories>
       ))}

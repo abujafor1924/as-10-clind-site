@@ -22,7 +22,7 @@ const Slider = () => {
         <SwiperSlide>
           <div className="text-center">
             <img
-              className="rounded w-82 h-72"
+              className="rounded md:w-96 md:h-72 w-32 h-32 border-solid border-1 border-white"
               src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
               alt=""
             />
@@ -32,7 +32,7 @@ const Slider = () => {
         <SwiperSlide>
           <div className="text-center">
             <img
-              className="rounded w-82 h-72"
+              className="rounded md:w-96 md:h-72 w-32 h-32 border-solid border-1 border-white"
               src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
               alt=""
             />
@@ -42,7 +42,7 @@ const Slider = () => {
         <SwiperSlide>
           <div className="text-center">
             <img
-              className="rounded w-82 h-72"
+              className="rounded md:w-96 md:h-72 w-32 h-32 border-solid border-1 border-white"
               src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
               alt=""
             />
@@ -52,7 +52,7 @@ const Slider = () => {
         <SwiperSlide>
           <div className="text-center">
             <img
-              className="rounded w-82 h-72"
+              className="rounded md:w-96 md:h-72 w-32 h-32 border-solid border-1 border-white"
               src="https://plus.unsplash.com/premium_photo-1663852297514-2211cfb8ae9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
               alt=""
             />

@@ -5,7 +5,7 @@ const Categories = ({ data }) => {
   const { chefName, yearsOfExperience, numberOfRecipes, likes, image, id } =
     data;
   return (
-    <div className="card w-96 bg-base-100 shadow-xl py-8 px-4">
+    <div className="card md:w-96 bg-base-100 shadow-xl py-8 px-4">
       <figure>
         <img src={image} alt="Shoes" />
       </figure>

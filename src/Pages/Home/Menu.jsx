@@ -2,7 +2,7 @@ import React from "react";
 
 const Menu = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 p-4 h-96  mt-24">
+    <div className="grid md:grid-cols-3 gap-4 p-4 md:h-96  md:mt-24">
       <div className="card card-side bg-slate-200 h-60 shadow-xl">
         <figure>
           <img
