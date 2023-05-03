@@ -51,8 +51,11 @@ const AuthProvider = ({ children }) => {
   //   return sendEmailVerification(auth.currentUser);
   // };
 
-  const updateUser = (name, photo) => {
-    return updateProfile(auth.currentUser, { name, photo });
+  const updateUser = (displayName, photoURL) => {
+    return updateProfile(auth.currentUser, {
+      displayName: displayName,
+      photoURL: photoURL,
+    });
   };
 
   const forgetPassword = (email) => {

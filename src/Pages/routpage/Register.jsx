@@ -12,12 +12,12 @@ const Register = () => {
     setSuccess("");
     setError("");
     const form = e.target;
-    const name = form.name.value;
-    const photo = form.photo.value;
+    const displayName = form.name.value;
+    const photoURL = form.photo.value;
     const email = form.email.value;
     const password = form.password.value;
     const confirm = form.confirm.value;
-    console.log(name, email, password, confirm, photo);
+    // console.log(name, email, password, confirm, photo);
 
     //validation Prosses
     if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
@@ -50,9 +50,10 @@ const Register = () => {
         //   .catch((error) => {
         //     console.log(error);
         //   });
-        updateUser(name, photo)
+        updateUser({ displayName, photoURL })
           .then((result) => {
-            alert("profile update");
+            const user = result.user;
+            console.log(user);
           })
           .catch((error) => console.log(error));
       })
