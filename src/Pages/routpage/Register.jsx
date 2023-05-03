@@ -129,12 +129,13 @@ const Register = () => {
                 placeholder="Confirm password"
                 name="confirm"
                 className="input input-bordered"
+                required
               />
             </div>
             <p className="text-green-500  mt-2">{success}</p>
             <p className="text-red-500  mt-2">{error}</p>
             <div className="form-control mt-6">
-              <Link className="btn btn-primary">Register</Link>
+              <button className="btn btn-primary">Register</button>
             </div>
             <p>
               alredy have a account ?{" "}

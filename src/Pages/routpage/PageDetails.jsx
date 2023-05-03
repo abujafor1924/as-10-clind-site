@@ -37,7 +37,11 @@ const PageDetails = () => {
           <FaRegThumbsUp className="m-1"></FaRegThumbsUp>
           {likes}
         </p>
+        <h1 className="text-4xl font-bold text-sky-900 mt-4">
+          Some Recepis Section
+        </h1>
       </div>
+
       <div className="grid md:grid-cols-3 gap-2 ">
         {recipe.map((recipe) => (
           <Recepe key={recipe.id} recipe={recipe}></Recepe>

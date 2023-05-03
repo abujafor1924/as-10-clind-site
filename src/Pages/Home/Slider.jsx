@@ -5,6 +5,7 @@ import "swiper/swiper.min.css";
 import "swiper/css/pagination";
 // import "./styles.css";
 import { Pagination } from "swiper";
+import { FaAngleLeft } from "react-icons/fa";
 
 const Slider = () => {
   return (
@@ -17,7 +18,7 @@ const Slider = () => {
         //      clickable: true,
         //    }}
         modules={[Pagination]}
-        className="mySwiper"
+        className="mySwiper absolute"
       >
         <SwiperSlide>
           <div className="text-center">

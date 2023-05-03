@@ -5,16 +5,20 @@
       rgba(31, 32, 33, 0.541),
       rgba(30, 28, 29, 0.589)
     ),
-    url("https://thumbs.dreamstime.com/z/restaurant-alfresco-17793334.jpg");
+    url("./../../src/Pages/img/restaurant-alfresco-17793334.jpg");
   background-attachment: fixed;
 }
 .bg-img-head {
-  background-position: top;
-  background-size: cover;
+  background-position: center;
+  background-size: auto;
   background-image: 
   /* linear-gradient(
       to bottom,
       rgba(31, 32, 33, 0.265),
       rgba(30, 28, 29, 0.221)
-    ),  */ url("https://www.shutterstock.com/image-photo/cropped-shot-man-chef-cook-600w-1808365627.jpg");
+    ),  */ url("https://img.freepik.com/premium-psd/cooking-courses-facebook-cover-banner-template_131196-160.jpg?w=740");
+}
+
+.hight {
+  height: 80vh;
 }
