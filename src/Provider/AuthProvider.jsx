@@ -52,7 +52,7 @@ const AuthProvider = ({ children }) => {
   // };
 
   const updateUser = (name, photo) => {
-    return updateProfile(auth.currentUser, (name, photo));
+    return updateProfile(auth.currentUser, { name, photo });
   };
 
   const forgetPassword = (email) => {
@@ -63,6 +63,7 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
+      console.log(currentUser);
       setLoding(false);
     });
     // stop obserbing

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaBeer, FaRegThumbsUp } from "react-icons/fa";
-import LazyLoad from "react-lazy-load";
+
 const Categories = ({ data }) => {
   const { chefName, yearsOfExperience, numberOfRecipes, likes, image, id } =
     data;

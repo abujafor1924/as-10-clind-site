@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { FaBeer, FaRegThumbsUp } from "react-icons/fa";
 import Recepe from "./Recepe";
+import LazyLoad from "react-lazy-load";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const PageDetails = () => {
   const pagges = useLoaderData();
@@ -19,9 +22,12 @@ const PageDetails = () => {
 
   return (
     <div className="card w-10/12 bg-base-100 mx-auto shadow-xl p-4">
-      <figure>
-        <img className="rounded" src={image} alt="Shoes" />
-      </figure>
+      {/* <figure>
+        <LazyLoad offset={300}>
+          <img className="rounded" src={image} alt="Shoes" />
+        </LazyLoad>
+      </figure> */}
+      <LazyLoadImage src={image} effect="blur" alt="Image Alt" />
       <div className="card-body">
         <h2 className="card-title">{chefName}</h2>
         <p>{description}</p>

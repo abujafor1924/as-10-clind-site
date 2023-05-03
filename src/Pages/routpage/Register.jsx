@@ -50,17 +50,16 @@ const Register = () => {
         //   .catch((error) => {
         //     console.log(error);
         //   });
+        updateUser(name, photo)
+          .then((result) => {
+            alert("profile update");
+          })
+          .catch((error) => console.log(error));
       })
       .catch((error) => {
         console.log(error);
         setError(error.message);
       });
-
-    updateUser(name, photo)
-      .then((result) => {
-        console.log(result);
-      })
-      .catch((error) => console.log(error));
   };
   return (
     <div className="hero min-h-screen bg-base-200">

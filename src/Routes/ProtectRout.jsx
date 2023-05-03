@@ -10,7 +10,7 @@ const ProtectRout = ({ children }) => {
 
   if (loding) {
     return (
-      <div className="mx-auto mt-24">
+      <div className=" ml-20 mt-20">
         <button className="btn btn-square text-cyan-500 loading"></button>
       </div>
     );
