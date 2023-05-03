@@ -111,9 +111,18 @@ const Header = () => {
               <Link to={"/register"}>Register</Link>
             </li> */}
           </ul>
-          {user && <h1>User Profile : {user?.email}</h1>}
         </div>
         <div className="navbar-end">
+          {user && (
+            <h1 className="flex">
+              <img
+                className="w-12 h-12 rounded-full m-4"
+                src={user?.photoURL}
+                title={user?.displayName}
+                alt=""
+              />
+            </h1>
+          )}
           <span>
             {user ? (
               <button onClick={handleLogOut} className="btn">

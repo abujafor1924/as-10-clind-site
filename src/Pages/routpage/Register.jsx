@@ -50,10 +50,9 @@ const Register = () => {
         //   .catch((error) => {
         //     console.log(error);
         //   });
-        updateUser({ displayName, photoURL })
+        updateUser(displayName, photoURL)
           .then((result) => {
-            const user = result.user;
-            console.log(user);
+            console.log(result);
           })
           .catch((error) => console.log(error));
       })
@@ -135,7 +134,7 @@ const Register = () => {
             <p className="text-green-500  mt-2">{success}</p>
             <p className="text-red-500  mt-2">{error}</p>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Register</button>
+              <Link className="btn btn-primary">Register</Link>
             </div>
             <p>
               alredy have a account ?{" "}
