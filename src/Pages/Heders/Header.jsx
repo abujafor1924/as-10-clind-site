@@ -37,12 +37,35 @@ const Header = () => {
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
-                <a>Item 1</a>
+              <li className="active:font-bold  active:text-indigo-500 ">
+                <NavLink
+                  to={"/"}
+                  className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "active" : ""
+                  }
+                >
+                  Home
+                </NavLink>
               </li>
-
               <li>
-                <a>Item 3</a>
+                <NavLink
+                  to={"/about"}
+                  className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "active" : ""
+                  }
+                >
+                  Blog
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to={"/privet"}
+                  className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "active" : ""
+                  }
+                >
+                  Privet
+                </NavLink>
               </li>
             </ul>
           </div>
