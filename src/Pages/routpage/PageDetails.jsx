@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { FaBeer, FaRegThumbsUp } from "react-icons/fa";
 import Recepe from "./Recepe";
-import LazyLoad from "react-lazy-load";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
