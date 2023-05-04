@@ -5,7 +5,7 @@ import { AutContext } from "../../Provider/AuthProvider";
 const Register = () => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
-  const { creatUser, updateUser } = useContext(AutContext);
+  const { creatUser, updateUser, logdOut } = useContext(AutContext);
 
   const handelRegister = (e) => {
     e.preventDefault();
@@ -42,7 +42,7 @@ const Register = () => {
         const logedUser = result.user;
 
         console.log(logedUser);
-        setSuccess("your login success");
+        setSuccess("your Registretion success , Please Login Now");
         form.reset();
         // varifyEmail()
         //   .then((result) => {
@@ -55,8 +55,10 @@ const Register = () => {
         updateUser(displayName, photoURL)
           .then((result) => {
             // window.location.reload();
-            form.reset();
             console.log(result);
+            logdOut()
+              .then((result) => {})
+              .catch((error) => console.log(error));
           })
           .catch((error) => console.log(error));
       })
