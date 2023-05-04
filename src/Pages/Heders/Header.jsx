@@ -114,14 +114,16 @@ const Header = () => {
         </div>
         <div className="navbar-end">
           {user && (
-            <h1 className="flex">
-              <img
-                className="w-12 h-12 rounded-full m-4"
-                src={user?.photoURL}
-                title={user?.displayName}
-                alt=""
-              />
-            </h1>
+            <div className="flex">
+              <Link to={"/update"}>
+                <img
+                  className="w-12 h-12 rounded-full m-4"
+                  src={user?.photoURL}
+                  title={user?.displayName}
+                  alt=""
+                />
+              </Link>
+            </div>
           )}
           <span>
             {user ? (

@@ -10,6 +10,7 @@ import ProtectRout from "./ProtectRout";
 import PageDetails from "../Pages/routpage/PageDetails";
 import About from "../Pages/routpage/About";
 import Error from "../Error/Error";
+import Update from "../Pages/routpage/Update";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -58,6 +59,14 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/update",
+        element: (
+          <ProtectRout>
+            <Update></Update>
+          </ProtectRout>
+        ),
       },
     ],
   },

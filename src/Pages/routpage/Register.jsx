@@ -40,8 +40,10 @@ const Register = () => {
     creatUser(email, password)
       .then((result) => {
         const logedUser = result.user;
+
         console.log(logedUser);
         setSuccess("your login success");
+        form.reset();
         // varifyEmail()
         //   .then((result) => {
         //     console.log(result);
@@ -52,6 +54,8 @@ const Register = () => {
         //   });
         updateUser(displayName, photoURL)
           .then((result) => {
+            // window.location.reload();
+            form.reset();
             console.log(result);
           })
           .catch((error) => console.log(error));
