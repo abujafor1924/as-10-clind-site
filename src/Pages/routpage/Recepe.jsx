@@ -38,7 +38,7 @@ const Recepe = ({ recipe }) => {
 
               <button onClick={handleClick} disabled={buttonDisabled}>
                 {buttonDisabled ? (
-                  <FaRegHeart className="text-red-600 m-1 mx-2" />
+                  <FaRegHeart className="text-green-600 m-1 mx-2" />
                 ) : (
                   <FaHeart className="text-red-600 m-1 mx-2" />
                 )}

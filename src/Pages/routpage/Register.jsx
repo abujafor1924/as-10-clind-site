@@ -20,13 +20,13 @@ const Register = () => {
     // console.log(name, email, password, confirm, photo);
 
     //validation Prosses
-    if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
-      setError("Please provite  Two Uppercase ");
-      return;
-    } else if (!/[0-9]/.test(password)) {
-      setError("please 1-9 Number digit");
-      return;
-    }
+    // if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
+    //   setError("Please provite  Two Uppercase ");
+    //   return;
+    // } else if (!/[0-9]/.test(password)) {
+    //   setError("please 1-9 Number digit");
+    //   return;
+    // }
 
     setError("");
     if (password !== confirm) {
