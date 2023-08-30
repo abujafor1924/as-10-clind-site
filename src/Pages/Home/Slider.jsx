@@ -21,7 +21,7 @@ const Slider = () => {
         className="mySwiper absolute"
       >
         <SwiperSlide>
-          <div className="text-center">
+          <div className="text-center ">
             <img
               className="rounded md:w-96 md:h-72 w-32 h-32 border-solid border-1 border-white"
               src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
